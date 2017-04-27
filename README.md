@@ -2,9 +2,9 @@
 
 The method that has bugged is represented in TRUE.
 
-There are 2 stacks type created by StackFactory.
-StackFactory.SetStackType(0) is Type I.
-StackFactory.SetStackType(1) is Type II, of course.
+There are 2 stacks type created by StackFactory. <br>
+StackFactory.SetStackType(0) is Type I. <br>
+StackFactory.SetStackType(1) is Type II, of course. <br>
 
 |Method|Type I | Type II|
 |:-----:|:-------:|:--------:|
