@@ -13,7 +13,7 @@ public class StackTest {
 
 	@Before
 	public void setUp() {
-		StackFactory.setStackType(1 );
+		StackFactory.setStackType(0);
 		stack = StackFactory.makeStack(3);
 	}
 
@@ -39,7 +39,7 @@ public class StackTest {
 	// test isEmpty
 
 	@Test
-	public void testIsEmpty() {
+	public void testIsEmptyWhenCreated() {
 		assertTrue(stack.isEmpty());
 	}
 
@@ -83,6 +83,9 @@ public class StackTest {
 	public void testPeekWhenPush() {
 		stack.push("1");
 		assertEquals("1", stack.peek());
+		// peek should not change the stack
+		assertEquals("1", stack.peek());
+		assertEquals(1, stack.size());
 		stack.push("2");
 		assertEquals("2", stack.peek());
 	}
