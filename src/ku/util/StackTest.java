@@ -13,7 +13,7 @@ public class StackTest {
 
 	@Before
 	public void setUp() {
-		StackFactory.setStackType(0);
+		StackFactory.setStackType(1);
 		stack = StackFactory.makeStack(3);
 	}
 
